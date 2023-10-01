@@ -1124,8 +1124,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-left: 30px;
-  padding-top: 100px;
+  margin-left: 50px;
+  padding-top: 60px;
+  padding-right: 90px;
 }
 .img-rounded {
   border-radius: 6px;
