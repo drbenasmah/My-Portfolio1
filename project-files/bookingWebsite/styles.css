@@ -300,12 +300,12 @@ body {
 }
 
 .seat.selected {
-  background-color: #007bff;
+  background-color: greenyellow;
   color: #fff;
 }
 
 .seat.occupied {
-  background-color: #f44336;
+  background-color: #fd6565;
   cursor: not-allowed;
 }
 
