@@ -81,7 +81,7 @@ body {
   width: 95%;
   height: 250px;
   /* border: 1px solid #fff; */
-  background: url(img) no-repeat center -30px / cover;
+  background: url(/img/ica.jpeg) no-repeat center -30px / cover;
   z-index: -10;
   border-radius: 20px;
 }

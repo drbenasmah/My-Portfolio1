@@ -59,7 +59,7 @@ for (let rowIndex = 3; rowIndex < 6; rowIndex++) {
 }
 
 // Create grids with seats for Normal section (2 rows)
-for (let rowIndex = 0; rowIndex < 3; rowIndex++) {
+for (let rowIndex = 0; rowIndex < 6; rowIndex++) {
   const gridRow = gridRows[rowIndex + 3]; // Start from rowIndex 3 for Normal section
 
   for (let gridIndex = 0; gridIndex < numGridsPerRowNormal; gridIndex++) {
