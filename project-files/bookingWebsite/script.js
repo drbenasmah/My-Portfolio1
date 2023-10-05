@@ -25,6 +25,7 @@ for (let rowIndex = 3; rowIndex < 6; rowIndex++) {
   for (let gridIndex = 0; gridIndex < numGridsPerRowVIP; gridIndex++) {
     const container = document.createElement("div");
     container.classList.add("container");
+    container.classList.add("vip");
 
     for (let rowIdx = 0; rowIdx < rowsPerGrid; rowIdx++) {
       const row = document.createElement("div");
@@ -46,6 +47,7 @@ for (let rowIndex = 3; rowIndex < 6; rowIndex++) {
 
         seatNumberCounter++; // Increment seat number
 
+        seat.classList.add("vip-seat");
         row.appendChild(seat);
       }
 
