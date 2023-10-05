@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #94a4b6;
+}
+
+.screen {
+  width: 100px;
+  height: 20px;
+  background-color: #c7f5d1;
+  margin-bottom: 10px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center; /* Adjust as needed */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust as needed for spacing */
+}
+
+.grid-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px; /* Adjust margin as needed */
+  background-color: ;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 4px;
+  background-color: ;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.seat {
+  background-color: white;
+  height: 16px;
+  width: 18px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative; /* Position the seat number relative to the seat */
+}
+
+.seat.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.seat.occupied {
+  background-color: #f44336;
+  cursor: not-allowed;
+}
+
+.details {
+  text-align: left;
+}
+
+/* Customize the seat number styles */
+.seat::before {
+  content: attr(
+    data-seat-number
+  ); /* Use the 'data-seat-number' attribute as content */
+  font-size: 50%; /* Decrease font size */
+  color: #555; /* Change textno color */
+  font-weight: bold; /* Apply bold style */
+  position: absolute; /* Position the seat number relative to the seat */
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center-align the seat number */
+}
