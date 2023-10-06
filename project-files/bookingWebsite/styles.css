@@ -90,7 +90,7 @@ body {
   display: flex;
   justify-content: center; /* Adjust as needed */
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1000px;
 }
 
 .legend-item {
