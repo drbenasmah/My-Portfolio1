@@ -79,18 +79,12 @@ body {
 
 /* My CSS code  */
 
-.screen {
-  width: 100px;
-  height: 20px;
-  background-color: #c7f5d1;
-  margin-bottom: 10px;
-}
-
 .legend {
   display: flex;
   justify-content: center; /* Adjust as needed */
   align-items: center;
-  margin-bottom: 1000px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .legend-item {
