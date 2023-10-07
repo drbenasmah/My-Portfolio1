@@ -234,6 +234,7 @@ h2 {
   background: url("img/ica2.jpg") top right;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 #hero:before {
