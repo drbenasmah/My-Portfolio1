@@ -7,6 +7,7 @@ const vvipSeatElement = document.getElementById("vvip-seat");
 const vip1SeatElement = document.getElementById("vip1-seat");
 const vip2SeatElement = document.getElementById("vip2-seat");
 const normalSeatElement = document.getElementById("normal-seat");
+const buyTicketButton = document.getElementById("buy-ticket-button");
 
 // Initialize selected seat count and seat price
 let selectedSeatCount = 0;
@@ -200,4 +201,18 @@ function updateSelectedSeats() {
   vvipSeatElement.textContent = selectedVVIPSeatCount;
   vip1SeatElement.textContent = selectedVIP1SeatCount;
   vip2SeatElement.textContent = selectedVIP2SeatCount;
+}
+
+// Add a click event listener to the button
+buyTicketButton.addEventListener("click", purchaseTicket);
+
+// Function to handle the ticket purchase
+function purchaseTicket() {
+  // Get the selected seats and calculate the total price
+  // You can use the existing `updateSelectedSeats` function for this
+
+  // For example, you can display an alert with the purchase details
+  const selectedSeatsInfo = `Selected Seats:\nVVIP: ${selectedVVIPSeatCount}\nVIP1: ${selectedVIP1SeatCount}\nVIP2: ${selectedVIP2SeatCount}\nNormal: ${selectedNormalSeatCount}\nTotal Price: ₦${nonIcaTotalPrice}`;
+
+  alert(`Thank you for your purchase!\n${selectedSeatsInfo}`);
 }

@@ -329,4 +329,90 @@ h2 {
     margin-top: -80px;
     margin-left: 10px;
   }
+
+  #hero {
+    width: 100%;
+    height: 40vh;
+    background: url("img/ica2.jpg") top right;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+}
+
+/* Style the Buy Ticket button */
+#buy-ticket-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the button text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+
+  /* Center the button horizontally */
+  display: block;
+  margin: 20px auto;
+}
+
+/* Change button color on hover */
+#buy-ticket-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Query for iPad Landscape */
+@media (max-width: 1024px) {
+  /* Adjust container width for smaller screens */
+  .container {
+    width: 90%;
+  }
+
+  /* Adjust font sizes and spacing for smaller screens */
+  h2 {
+    font-size: 24px;
+  }
+
+  .legend-item {
+    margin-right: 10px;
+  }
+
+  .grid-row {
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .seat {
+    width: 14px;
+    height: 16px;
+    font-size: 40%;
+  }
+
+  #hero {
+    width: 1100px;
+    height: 30vh;
+    background: url("img/ica2.jpg") top right;
+    background-size: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .book {
+    flex-direction: column;
+  }
+
+  .book .left,
+  .right {
+    width: 1100px;
+  }
+
+  .book .right::before,
+  .book .right::after {
+    display: none;
+  }
+  .book .left {
+    width: 1100px;
+    background: #2e3037;
+    margin-left: 0px;
+  }
 }
