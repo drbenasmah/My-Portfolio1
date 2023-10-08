@@ -79,12 +79,20 @@ body {
 
 /* My CSS code  */
 
+.screen {
+  width: 100px;
+  height: 20px;
+  background-color: #c7f5d1;
+  margin-bottom: 10px;
+}
+
 .legend {
   display: flex;
   justify-content: center; /* Adjust as needed */
   align-items: center;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
+  color: white;
 }
 
 .legend-item {
@@ -151,8 +159,10 @@ body {
   left: 50%; /* Adjust horizontal position */
   transform: translate(-50%, -50%); /* Center-align the seat number */
 }
-/* Add margin in the middle of the VIP section */
-.container.vip:nth-child(8n + 4) {
+/* Add margin in the middle of the VIP section for vvip-seat, vip1-seat, and vip2-seat */
+.container.vvip-seat:nth-child(8n + 4),
+.container.vip1-seat:nth-child(8n + 4),
+.container.vip2-seat:nth-child(8n + 4) {
   margin-right: 200px; /* Margin between the two groups of 4 grids in the VIP section */
 }
 /* Customize the size of VIP seats */
@@ -176,47 +186,18 @@ h2 {
     width: 100%;
   }
 
-  .book .left .play {
-    left: 50%;
-  }
-
   .book .right::before,
   .book .right::after {
     display: none;
   }
+  .book .left {
+    width: 100%;
+    background: #2e3037;
+    margin-left: 0px;
+  }
 }
 
 /* Example: Stack grids on top of each other on screens less than 768px wide */
-@media (max-width: 768px) {
-  .grid-row {
-    flex-direction: column;
-  }
-
-  .container .row .seat {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin: 10; /* Remove margin */
-    padding: 20px;
-  }
-  .container {
-    width: 100%; /* Adjust as needed */
-  }
-
-  .seat::before {
-    content: attr(
-      data-seat-number
-    ); /* Use the 'data-seat-number' attribute as content */
-    font-size: 90%; /* Decrease font size */
-    color: #555; /* Change textno color */
-    font-weight: bold; /* Apply bold style */
-    position: absolute; /* Position the seat number relative to the seat */
-    top: 50%; /* Adjust vertical position */
-    left: 50%; /* Adjust horizontal position */
-    transform: translate(-50%, -50%); /* Center-align the seat number */
-  }
-}
 
 .intro {
   background-color: #1f2025;
@@ -283,4 +264,69 @@ h2 {
 
 #hero .btn-scroll:hover {
   color: #ffb727;
+}
+/* Style the container for seat information */
+.cont {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Style the seat categories and counts */
+.cont p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the total price */
+.cont p:last-child {
+  font-weight: bold;
+}
+
+.cont p:first-child {
+  font-weight: bold;
+}
+.prices {
+  color: rgb(36, 169, 169);
+}
+@media (max-width: 768px) {
+  .grid-row {
+    flex-direction: column;
+  }
+
+  .container .row .seat {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 10; /* Remove margin */
+    padding: 20px;
+  }
+  .container {
+    width: 100%; /* Adjust as needed */
+  }
+
+  .seat::before {
+    content: attr(
+      data-seat-number
+    ); /* Use the 'data-seat-number' attribute as content */
+    font-size: 90%; /* Decrease font size */
+    color: #555; /* Change textno color */
+    font-weight: bold; /* Apply bold style */
+    position: absolute; /* Position the seat number relative to the seat */
+    top: 50%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center-align the seat number */
+  }
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 44px;
+    font-family: "Satisfy", serif;
+    color: #fff;
+    margin-top: -150px;
+    margin-left: 10px;
+  }
 }

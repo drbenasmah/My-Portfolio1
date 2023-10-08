@@ -40,9 +40,17 @@
               </div>
             </div>
             <div class="cont">
-              <p>Selected Seats: <span id="selected-seats">0</span></p>
-              <p>Total Price: $<span id="total-price">0</span></p>
+              <p>Selected Seats:</p>
+              <p>
+                VVIP seats = <span id="vvip-seat">0</span><br>
+                VIP1 seats = <span id="vip1-seat">0</span><br>
+                VIP2 seats = <span id="vip2-seat">0</span><br>
+                Normal seats = <span id="normal-seat">0</span><br>
+                Total seats selected = <span id="selected-seats">0</span>
+              </p>
+              <p>Total Price <br> ICA member : ₦ <span id="total-price">0</span> <br> Non ICA member : ₦ <span id="non-ica-total-price">0</span></p>
             </div>
+            
           </div>
       
             
@@ -52,24 +60,31 @@
               
             <div class="right">
               <h2>VVIP SEATS</h2>
+              <p class="prices"> ICA member : 150K<br>
+                Non ICA member :  160K</p>
             <div class="vip-container">
-              <div class="grid-row" id="vvip">
+              <div class="grid-row vvip-seat" id="vvip" >
                 <!-- VIP section with 8 grids per row, starting from rowIndex 3 -->
               </div>
               <h2>VIP 1 SEATS</h2>
+              <p class="prices"> ICA member : 100K <br>
+                Non ICA member : 110K  </p>
             
-              <div class="grid-row" id="vip1">
+              <div class="grid-row vip1-seat" id="vip1">
                 <!-- VIP section with 8 grids per row, starting from rowIndex 3 -->
               </div>
               <h2>VIP 2 SEATS</h2>
-              <p>Available VIP 2 Seats: <span id="available-vip2-seats">0</span></p>
+              <p class="prices"> ICA member : 60K <br>
+                Non ICA member: 70K </p>
             
-              <div class="grid-row" id="vip2">
+              <div class="grid-row vip2-seat" id="vip2">
                 <!-- VIP section with 8 grids per row, starting from rowIndex 3 -->
               </div>
             </div>
             
             <h2>NORMAL SEATS</h2>
+            <p class="prices"> ICA member : 35K <br>
+              Non ICA member: 40K </p>
             <div class="normal-container">
               <div class="grid-row">
                 <!-- First row of 10 grids -->
