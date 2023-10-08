@@ -291,6 +291,7 @@ h2 {
 .prices {
   color: rgb(36, 169, 169);
 }
+
 @media (max-width: 768px) {
   .grid-row {
     flex-direction: column;
@@ -362,7 +363,7 @@ h2 {
 }
 
 /* Media Query for iPad Landscape */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Adjust container width for smaller screens */
   .container {
     width: 90%;
