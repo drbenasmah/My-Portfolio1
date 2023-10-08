@@ -15,10 +15,10 @@ let selectedSeatCount = 0;
 
 // Define seat prices for each section
 const seatPrices = {
-  "vvip-seat": 150, // Price for VVIP seats
-  "vip1-seat": 100, // Price for VIP 1 seats
-  "vip2-seat": 60, // Price for VIP 2 seats
-  "normal-seat": 35, // Price for Normal seats
+  "vvip-seat": 15, // Price for VVIP seats
+  "vip1-seat": 10, // Price for VIP 1 seats
+  "vip2-seat": 6, // Price for VIP 2 seats
+  "normal-seat": 3.5, // Price for Normal seats
 };
 
 // Define the number of grids per row
@@ -171,28 +171,28 @@ function updateSelectedSeats() {
     const seatClass = seat.classList[1]; // Get the second class, which corresponds to seat type
     const price = seatPrices[seatClass];
     totalPrice += price;
-    nonIcaTotalPrice = totalPrice + 5;
+    nonIcaTotalPrice = totalPrice + 0.5;
   });
 
   selectedVVIPSeats.forEach((seat) => {
     const seatClass = seat.classList[1]; // Get the second class, which corresponds to seat type
     const price = seatPrices[seatClass];
     totalPrice += price;
-    nonIcaTotalPrice = totalPrice + 10;
+    nonIcaTotalPrice = totalPrice + 1;
   });
 
   selectedVIP1Seats.forEach((seat) => {
     const seatClass = seat.classList[1]; // Get the second class, which corresponds to seat type
     const price = seatPrices[seatClass];
     totalPrice += price;
-    nonIcaTotalPrice = totalPrice + 10;
+    nonIcaTotalPrice = totalPrice + 1;
   });
 
   selectedVIP2Seats.forEach((seat) => {
     const seatClass = seat.classList[1]; // Get the second class, which corresponds to seat type
     const price = seatPrices[seatClass];
     totalPrice += price;
-    nonIcaTotalPrice = totalPrice + 10;
+    nonIcaTotalPrice = totalPrice + 1;
   });
 
   totalPriceElement.textContent = totalPrice;
