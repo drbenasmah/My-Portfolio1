@@ -4,7 +4,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 20px;
-  background-image: url(/img/background-wood3.jpg);
+  background-image: url(../africanCheckers/img/background-wood3.jpg);
 }
 
 #board {
@@ -46,7 +46,7 @@ body {
   width: 500px;
   height: 500px;
 
-  background-image: url(/img/background-wood3.jpg);
+  background-image: url(../africanCheckers/img/background-wood3.jpg);
   padding: 6rem;
 
   color: #f0f0f0;
@@ -121,7 +121,7 @@ div.stats {
   box-sizing: border-box;
   padding: 20px 30px;
   background-color: #f1f1ff;
-  background-image: url(/img/light_wood.jpg);
+  background-image: url(../africanCheckers/img/light_wood.jpg);
   color: #3a3042;
   border-radius: 3px;
   box-shadow: 1px 1px 3px #232621;
