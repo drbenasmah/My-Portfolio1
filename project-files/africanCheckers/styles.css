@@ -1,0 +1,225 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+  background-image: url(../africanCheckers/img/background-wood3.jpg);
+}
+
+#board {
+  /* width: 70%; */
+  background-color: #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* margin: 50px; */
+  /* margin-left: 30px; */
+}
+
+#statistics {
+  width: 25%;
+  margin-top: 70px;
+
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #board,
+  #statistics {
+    width: 100%;
+  }
+}
+
+/* Modal css */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+
+  background-image: url(../africanCheckers/img/background-wood3.jpg);
+  padding: 6rem;
+
+  color: #f0f0f0;
+
+  z-index: 10;
+  border: 30px solid #deb887;
+  box-shadow: 0 0 0 6px #603002;
+}
+
+/* Target the main modal div with class "modal" */
+.modal {
+  font-size: 16px;
+}
+
+#winner-message {
+  font-size: 34px;
+  padding: 30px;
+}
+
+.modal p {
+  font-family: Haettenschweiler, sans-serif, serif;
+  font-size: 14px;
+  color: green;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: white;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-right: 200px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: rgb(230, 51, 51);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+div.stats {
+  width: 100%;
+  margin: 13vmin auto 0;
+
+  box-sizing: border-box;
+  padding: 20px 30px;
+  background-color: #f1f1ff;
+  background-image: url(/img/light_wood.jpg);
+  color: #3a3042;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #232621;
+}
+
+div.stats {
+  margin: 50px auto !important;
+}
+div.stats .wrapper {
+  display: flex;
+}
+div.stats #player1 {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  background-color: red;
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  border-top-left-radius: 3px;
+  color: white;
+}
+div.stats #player1 .capturedPiece {
+  width: 2.4vmin;
+  height: 2.4vmin;
+  background-color: #232621;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6vmin;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  margin: 5px;
+}
+div.stats #player2 {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  border-top-right-radius: 3px;
+  color: white;
+}
+div.stats #player2 .capturedPiece {
+  width: 2.4vmin;
+  height: 2.4vmin;
+  background-color: #b93848;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6vmin;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  margin: 5px;
+}
+div.stats div.turn {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #beee62 50%, transparent 50%);
+  border-radius: 0 0 3px 3px;
+}
+div.stats span#winner {
+  display: block;
+  padding: 10px 0 0;
+  text-align: center;
+}
+div.stats button#cleargame {
+  display: block;
+  border: 0;
+  color: #f1f1ff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto 10px;
+  padding: 10px;
+  background-color: #16a8c7;
+  box-shadow: 1px 1px 3px #232621;
+  transition: background-color 0.15s linear;
+}
+div.stats button#cleargame:hover {
+  background-color: #0c5a6b;
+}
+
+#game-canvas {
+  border: 25px solid #603002;
+  box-shadow: 0 0 0 6px #deb887;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
