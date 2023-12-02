@@ -78,11 +78,27 @@ footer {
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
   .menu-game {
-    width: 90%; /* Adjusted width for smaller screens */
-    height: 40%;
+    width: 80%; /* Adjusted width for smaller screens */
+    height: 50%; /* Let the height adjust based on content */
   }
 
   .menu-game h1 {
     font-size: 1.4rem; /* Adjusted font size for smaller screens */
+    margin-left: 30px;
+  }
+
+  .game-options {
+    flex-direction: column; /* Stack game options vertically on smaller screens */
+    align-items: stretch; /* Stretch items to full width */
+    margin-top: 10px; /* Reduce margin for better spacing */
+  }
+
+  .game-option {
+    margin: 20px 0; /* Adjusted margin for better spacing */
+  }
+
+  .button {
+    width: 100%; /* Make the button fill the width of its container */
+    margin-top: 10px; /* Adjusted margin for better spacing */
   }
 }
