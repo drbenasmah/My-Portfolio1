@@ -1,0 +1,88 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0c9a7; /* Light brown background color */
+  background-image: url(./ai-8x8-checkers/img/background-wood3.jpg);
+  color: #444; /* Dark text color */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 10;
+  border: 25px solid #603002;
+  box-shadow: 0 0 0 6px #deb887;
+}
+
+.menu-game {
+  background-image: url(./ai-8x8-checkers/img/light_wood.jpg);
+  width: 80%; /* Adjusted width for responsiveness */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Auto-adjust height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-game h1 {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem; /* Responsive font size */
+  position: relative;
+  color: #0aa144;
+  text-shadow: 1px 1px 0px #236bd7, 3px 3px 0px #603002, 2px 2px 0px #4a4672,
+    2px 2px 0px #2020cf;
+  transform: perspective(4000px) rotateX(25deg) scale(1.2);
+}
+
+.p {
+  color: #1a0d01; /* Dark brown paragraph color */
+}
+
+.game-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.game-option {
+  margin: 0 10px;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4c2f12; /* Dark wood-like button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #593c1f; /* Slightly lighter wood-like button color on hover */
+}
+
+footer {
+  color: #593c1f; /* Dark brown footer text color */
+  margin-top: 30px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .menu-game {
+    width: 90%; /* Adjusted width for smaller screens */
+    height: 40%;
+  }
+
+  .menu-game h1 {
+    font-size: 1.4rem; /* Adjusted font size for smaller screens */
+  }
+}

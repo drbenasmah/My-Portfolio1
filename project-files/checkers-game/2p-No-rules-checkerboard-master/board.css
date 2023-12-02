@@ -1,0 +1,245 @@
+body {
+  background-color: #dddddd;
+  text-align: center;
+  background-image: url("images/dark_wood.jpg");
+}
+html h1,
+body h1 {
+  margin-top: 10px;
+
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+  color: #0aa144;
+
+  /* margin-left: 100px; */
+  text-shadow: 1px 1px 0px #236bd7, 2px 2px 0px #f7f7f9, 2px 2px 0px #4a4672,
+    2px 2px 0px #2020cf;
+  transform: perspective(4000px) rotateX(25deg) scale(1.2);
+}
+
+#board-container {
+  background-image: url("images/deep-brown-tile.jpg");
+  display: inline-block;
+  /* padding: 0.51vmin; */
+  border: 25px solid #603002;
+  box-shadow: 0 0 0 6px #deb887;
+  margin-top: -10px;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cell {
+  width: 6vmin;
+  height: 6vmin;
+  display: inline-block;
+  /* margin: 0.4vmin; */
+}
+
+.black {
+  background-image: url("images/background-wood3.jpg");
+}
+
+.white {
+  background-image: url("images/light_wood.jpg");
+}
+
+.checker {
+  margin: 10%;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-checker {
+  background-image: url("images/go-stone-white.png");
+  background-size: cover;
+  color: #444444;
+}
+
+.black-checker {
+  background-image: url("images/go-stone-black.png");
+  background-size: cover;
+  color: #cccccc;
+}
+
+.selected {
+  margin: 0;
+  border: 1vmin solid rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+}
+
+.out-of-play {
+  /*width: 10vmin;*/
+  height: 10vmin;
+  margin-top: 10px;
+}
+
+i {
+  font-size: 3vmin;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer {
+  color: white;
+
+  text-shadow: 1px 1px 0px #236bd7, 1px 1px 0px #f7f7f9, 1px 1px 0px #4a4672,
+    1px 1px 0px #2020cf;
+  transform: perspective(4000px) rotateX(25deg) scale(1.2);
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.stats {
+  width: 100%;
+  margin: 13vmin auto 0;
+
+  box-sizing: border-box;
+  padding: 20px 30px;
+  background-color: #f1f1ff;
+  background-image: url(./images/light_wood.jpg);
+  color: #3a3042;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #232621;
+}
+
+div.stats {
+  margin-top: 200px;
+}
+div.stats .wrapper {
+  display: flex;
+}
+div.stats #player1 {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  background-color: rgb(0, 255, 187);
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  border-top-left-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+div.stats #player1 .capturedPiece {
+  width: 2.4vmin;
+  height: 2.4vmin;
+  background-color: #232621;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6vmin;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  margin: 5px;
+}
+div.stats #player2 {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  border-top-right-radius: 3px;
+  color: white;
+}
+div.stats #player2 .capturedPiece {
+  width: 2.4vmin;
+  height: 2.4vmin;
+  background-color: #b93848;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6vmin;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  margin: 5px;
+}
+/* div.stats div.turn {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #beee62 50%, transparent 50%);
+  border-radius: 0 0 3px 3px;
+} */
+div.stats span#winner {
+  display: block;
+  padding: 10px 0 0;
+  text-align: center;
+}
+div.stats button#cleargame {
+  display: block;
+  border: 0;
+  color: #f1f1ff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto 10px;
+  padding: 10px;
+  background-color: #16a8c7;
+  box-shadow: 1px 1px 3px #232621;
+  transition: background-color 0.15s linear;
+}
+div.stats button#cleargame:hover {
+  background-color: #0c5a6b;
+}
+
+@media screen and (max-width: 768px) {
+  #game,
+  #statistics {
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+  div.stats {
+    margin: 1px auto;
+  }
+
+  #statistics {
+    flex: 1;
+     Adjust as needed based on your design
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    padding: 20px; /* Adjust padding as needed */
+    width: 20%;
+  }
+
+  .cell {
+    width: 8vmin;
+    height: 8vmin;
+    display: inline-block;
+    /* margin: 0.4vmin; */
+  }
+}
+
+.menu-button{
+  
+    display: block;
+    border: 0;
+    color: #f1f1ff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto 10px;
+    padding: 10px;
+    background-color: #16a8c7;
+    box-shadow: 1px 1px 3px #232621;
+    transition: background-color 0.15s linear;
+    width: 20%;
+  
+}
+.menu-button:hover {
+  background-color: #0c5a6b;
+}
